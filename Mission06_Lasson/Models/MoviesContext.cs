@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Mission06_Lasson.Models
 {
@@ -6,9 +7,10 @@ namespace Mission06_Lasson.Models
     {
         public MoviesContext(DbContextOptions<MoviesContext> options) : base (options) // Constructor
         { 
-        
         }
 
-        public DbSet<Movies> Movies { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Categories> Categories { get; set; }
     }
 }

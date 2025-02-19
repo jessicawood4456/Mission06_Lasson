@@ -57,8 +57,7 @@ input, select {
 
 /* Button Styling */
 button {
-    width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #205B7D; /* Matches your previous dark blue color */
     color: white;
     font-size: 16px;
@@ -68,9 +67,9 @@ button {
     transition: background-color 0.3s ease;
 }
 
-    button:hover {
-        background-color: #163f5a;
-    }
+button:hover {
+    background-color: #163f5a;
+}
 
 /* Centering the Form Container */
 .text-center {
