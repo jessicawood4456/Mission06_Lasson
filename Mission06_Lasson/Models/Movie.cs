@@ -19,6 +19,7 @@ namespace Mission06_Lasson.Models
         public string Title { get; set; }
 
         [Required]
+        [Range(1888, 9999, ErrorMessage="You must enter a valid year!")]
         public string Year { get; set; }
 
         public string? Director { get; set; }
